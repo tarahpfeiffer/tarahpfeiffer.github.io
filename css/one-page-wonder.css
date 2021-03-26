@@ -60,10 +60,6 @@ header.masthead {
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
   background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 header.masthead .masthead-content {
