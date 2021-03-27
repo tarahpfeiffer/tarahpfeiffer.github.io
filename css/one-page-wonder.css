@@ -60,7 +60,7 @@ header.masthead {
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
   background-image: url(../img/design10.jpg);
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -71,10 +71,12 @@ header.masthead .masthead-content {
 
 header.masthead .masthead-content .masthead-heading {
   font-size: 4rem;
+  color: rgb(20, 20, 26);
 }
 
 header.masthead .masthead-content .masthead-subheading {
   font-size: 2rem;
+  color: rgb(20, 20, 26);
 }
 
 @media (min-width: 992px) {
