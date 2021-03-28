@@ -1,0 +1,311 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Josefin Slab', serif;
+}
+
+header {
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(27, 27, 34);
+    opacity: .9;
+    color: rgb(252, 251, 248);
+    margin: 0;
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5em;
+}
+
+.logo {
+    letter-spacing: 1px;
+}
+
+.hamburger-icon {
+    box-sizing: border-box;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.line {
+    box-sizing: border-box;
+    height: .2em;
+    background-color: rgb(252, 251, 248);
+    margin: .2em 0;
+    border-radius: 5px;
+}
+
+.navbar {
+    position: absolute;   
+    top: 0;
+    right: 0;
+    display: grid;
+    place-content: start;
+    height: 100vh;
+    width: 60%;
+    background-color: rgb(23, 44, 41);
+    visibility: hidden;
+}
+
+.navbar-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navbar-li {
+    margin: 1em 0.5em;
+    color: rgb(252, 251, 248);
+    font-size: 2rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: rgb(252, 251, 248);
+    padding: .25em;
+}
+
+#close-navbar {
+    margin: 1em auto;
+}
+
+.active {
+    border-bottom: 1px solid;
+    font-weight: 600;
+}
+
+
+/* hero section */
+.hero {
+    background-image: url(images/design6.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    height: 35vh;
+}
+
+.hero-title, 
+.hero-subtitle {
+    font-weight: bolder;
+    color: rgb(22, 32, 37);
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-top: .5em;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+.cta {
+    background:rgb(22, 32, 37);
+    color: rgb(252, 251, 248);
+    padding: .5em 1em;
+    text-decoration: none;
+    border-radius: 10px;
+    opacity: .8;
+    display: inline-block;
+    margin-top: .5em;
+}
+
+
+/* main content */
+main {
+    margin: 0;
+    overflow: hidden;
+}
+
+section {
+    background: rgb(233, 239, 246);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 60%;
+}
+
+.content-title {
+    font-size: 1.5rem;
+}
+
+.content-body {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.content-img {
+    height: 30vw;
+    width: 30vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.left {
+    order: -1;
+}
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    background: rgb(27, 27, 34);
+    opacity: .7;
+    color: white;
+    width: 100%;
+    height: 50px;
+    padding: .5em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width:450px) {
+    .hero-title {
+        margin-top: 1.5em;
+    }
+}
+
+@media (min-width:600px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+    .hero-subtitle {
+        font-size: 1.7rem;
+    }
+    .hero-cta {
+        font-size: 1.3rem;
+    }
+    .content-title {
+        font-size: 1.8rem;
+    }
+    .content-body {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:800px) {
+    .header {
+        font-size: 1.5rem;
+        padding: 0 1em;
+    }
+    .navbar {
+        visibility: unset;
+        background-color: unset;
+        padding: unset;
+        margin: unset;   
+        position: unset; 
+        height: unset;
+        width: unset;
+    }
+    #open-navbar, 
+    #close-navbar {
+        visibility: hidden;
+        display: none;
+    }
+    .navbar-ul {
+        display: flex;
+        flex-direction: row;
+        margin: unset;
+        padding: unset;
+    }
+    .navbar-link {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+    .hero {
+        height: 50vh;
+    }
+    .hero-title {
+        font-size: 3.3rem;
+        margin-top: 1em;
+    }
+    .hero-subtitle {
+        font-size: 2.2rem;
+    }
+    .hero-cta {
+        font-size: 1.5rem;
+    }
+    .content-title {
+        font-size: 2rem;
+    }
+    .content-body {
+        font-size: 1.4rem;
+    }
+    .content-img {
+        height: 20vw;
+        width: 20vw;
+        margin: 0 2em;
+    }
+}
+
+@media (min-width:1200px) {
+    .navbar-link,
+    .logo {
+        font-size: 1.7rem;
+    }
+    .hero {
+        height: 60vh;
+    }
+    .hero-title {
+        font-size: 4rem;
+    }
+    .hero-subtitle {
+        font-size: 3rem;
+    }
+    .hero-cta {
+        font-size: 2rem;
+    }
+    
+    .content-title {
+        font-size: 2.5rem;
+    }
+    .content-body {
+        font-size: 1.8rem;
+    }
+    .content-img {
+        margin: 0 3em;
+    }
+    footer {
+        font-size: 1.5rem;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+

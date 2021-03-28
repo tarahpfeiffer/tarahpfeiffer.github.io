@@ -2,124 +2,108 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
   <title>Tarah Malaika Pfeiffer</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;600&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/one-page-wonder.css" rel="stylesheet">
-
+  <!-- Custom styles -->
+  <link href="homepage.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Tarah Malaika Pfeiffer</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-        </ul>
-      </div>
+  <!-- Header -->
+  <header class="header">
+    <p class="logo">Tarah Malaika Pfeiffer</p>
+    <!-- Hamburger icon -->
+    <div class="hamburger-icon" id="open-navbar">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-  </nav>
 
-  <header class="masthead text-center text-white">
-    <div class="masthead-content">
-      <div class="container">
-        <h1 class="masthead-heading mb-0">This page is under construction</h1>
-        <h2 class="masthead-subheading mb-0">Please check back in soon</h2>
-        <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
-      </div>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <ul class="navbar-ul">
+        <!-- Exit Button -->
+        <li class="navbar-li" id="close-navbar">x</li>
+        <li class="navbar-li">
+          <a href="#" class="navbar-link active">Home</a>
+        </li>
+        <li class="navbar-li">
+          <a href="#" class="navbar-link">About</a>
+        </li>
+        <li class="navbar-li">
+          <a href="#" class="navbar-link">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/design1.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/design2.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">Biography</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- MAIN CONTENT -->
+  <main>
 
+    <!-- Hero section -->
+    <section class="hero">
+        <h1 class="hero-title">
+          This page is under construction
+        </h1>
+        <h3 class="hero-subtitle">
+          Please check back in soon
+        </h3>
+        <a href="#" class="cta hero-cta">Find out more</a>
+    </section>
+
+    <!-- Content section -->
+    <section class="content">
+      <div class="card">
+        <div class="wrapper">
+          <h3 class="content-title">About Me</h3>
+          <p class="content-body">Orci nulla pellentesque dignissim enim sit amet venenatis urna.
+          Augue interdum velit euismod in pellentesque massa. 
+          Quam id leo in vitae turpis massa sed elementum</p>
+        </div>
+        <img class="content-img" src="images/design1.jpg">
+      </div>
+
+      <div class="card">
+        <div class="wrapper">
+          <h3 class="content-title">Biography</h3>
+          <p class="content-body">Orci nulla pellentesque dignissim enim sit amet venenatis urna.
+          Augue interdum velit euismod in pellentesque massa. 
+          Quam id leo in vitae turpis massa sed elementum</p>
+        </div>
+        <img class="content-img left" src="images/design2.jpg">
+      </div>
+
+      <div class="card">
+        <div class="wrapper">
+          <h3 class="content-title">Portfolio</h3>
+          <p class="content-body">Orci nulla pellentesque dignissim enim sit amet venenatis urna.
+          Augue interdum velit euismod in pellentesque massa. 
+          Quam id leo in vitae turpis massa sed elementum</p>
+        </div>
+        <img class="content-img" src="images/design3.jpg">
+      </div>
+
+    </section>
+
+  </main>
   
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="img/design6.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="p-5">
-            <h2 class="display-4">My projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="py-5 bg-black">
+  <footer class="footer">
     <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; Tarah Pfeiffer 2021</p>
+      <p class="footer-text">Copyright &copy; Tarah Pfeiffer 2021</p>
     </div>
-    <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="homepage.js"></script>
 
 </body>
 
