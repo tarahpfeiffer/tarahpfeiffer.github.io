@@ -8,11 +8,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Josefin Slab', serif;
-}
-
-header {
-    margin: 0;
+    font-family: 'Lora', serif;
 }
 
 .header {
@@ -20,14 +16,13 @@ header {
     opacity: .8;
     color: rgb(252, 251, 248);
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 .5em;
 }
-
 
 .logo {
     letter-spacing: 1px;
@@ -75,7 +70,15 @@ header {
 .navbar-link {
     text-decoration: none;
     color: rgb(252, 251, 248);
-    padding: .25em;
+    padding: .25em .5em;
+    transition: border .5s, padding .5s;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+    cursor: pointer;
+    border: 1px solid;
+    padding: .5em;
 }
 
 #close-navbar {
@@ -96,7 +99,7 @@ header {
     margin: 0;
     padding: 1em;
     text-align: center;
-    height: 35vh;
+    height: 40vh;
 }
 
 .hero-title, 
@@ -123,6 +126,13 @@ header {
     opacity: .8;
     display: inline-block;
     margin-top: .5em;
+    transition: background-color .3s;
+}
+
+.cta:hover,
+.cta:focus {
+    cursor: pointer;
+    background-color:rgb(9, 61, 53);
 }
 
 
@@ -175,7 +185,6 @@ section {
 }
 
 
-
 /* footer */
 footer {
     text-align: center;
@@ -183,14 +192,19 @@ footer {
     opacity: .7;
     color: white;
     width: 100%;
-    height: 50px;
-    padding: .5em;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* MEDIA QUERIES */
 
 @media (min-width:450px) {
+    .hero {
+        height: 50vh;
+    }
     .hero-title {
         margin-top: 1.5em;
     }
@@ -198,35 +212,36 @@ footer {
 
 @media (min-width:600px) {
     .hero-title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
     .hero-subtitle {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     .hero-cta {
-        font-size: 1.3rem;
-    }
-    .content-title {
-        font-size: 1.8rem;
-    }
-    .content-body {
+        margin-top: 1.5em;
         font-size: 1.2rem;
     }
-}
-
-@media (min-width:800px) {
-    .header {
+    .content-title {
         font-size: 1.5rem;
-        padding: 0 1em;
+    }
+    .content-body {
+        font-size: 1rem;
+    }
+    .header {
+        height: 10vh;
+
     }
     .navbar {
         visibility: unset;
         background-color: unset;
-        padding: unset;
-        margin: unset;   
+        padding: 0;
+        margin: 0;   
         position: unset; 
         height: unset;
         width: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #open-navbar, 
     #close-navbar {
@@ -236,31 +251,44 @@ footer {
     .navbar-ul {
         display: flex;
         flex-direction: row;
-        margin: unset;
-        padding: unset;
+        margin: 0;
+        padding: 0;
     }
+    .navbar-li {
+        padding: 0;
+        margin: 0 .5em;
+    }    
     .navbar-link {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         letter-spacing: 1px;
     }
+    .logo {
+        font-size: 1.3rem;
+        margin-left: 1em;
+        padding: 0;
+    }
+}
+
+@media (min-width:800px) {
+
     .hero {
-        height: 50vh;
+        height: 75vh;
     }
     .hero-title {
-        font-size: 3.3rem;
-        margin-top: 1em;
+        font-size: 3.5rem;
+        margin-top: 1.5em;
     }
     .hero-subtitle {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     .hero-cta {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
     .content-title {
-        font-size: 2rem;
+        font-size: 2em;
     }
     .content-body {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .content-img {
         height: 20vw;
@@ -270,31 +298,42 @@ footer {
 }
 
 @media (min-width:1200px) {
+    .header, 
+    .footer {
+        height: 12vh;
+    }
     .navbar-link,
     .logo {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     .hero {
-        height: 60vh;
+        height: 120vh;
     }
     .hero-title {
         font-size: 4rem;
+        margin-top: 1em;
     }
     .hero-subtitle {
         font-size: 3rem;
     }
     .hero-cta {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-top: 1em;
+    }
+
+    .content {
+        padding: 3em 2em;
     }
     
     .content-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .content-body {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+        line-height: 1.6;
     }
     .content-img {
-        margin: 0 3em;
+        margin: .5em 3em;
     }
     footer {
         font-size: 1.5rem;
