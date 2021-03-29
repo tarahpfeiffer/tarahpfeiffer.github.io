@@ -65,20 +65,20 @@ h1, h2, h3 {
     margin: 1em 0.5em;
     color: rgb(252, 251, 248);
     font-size: 2rem;
+    padding: .5em 1em;
 }
 
 .navbar-link {
     text-decoration: none;
     color: rgb(252, 251, 248);
     padding: .25em .5em;
-    transition: border .5s, padding .5s;
+    transition: background-color .5s;
 }
 
 .navbar-link:hover,
 .navbar-link:focus {
     cursor: pointer;
-    border: 1px solid;
-    padding: .5em;
+    background-color: rgb(9, 61, 53);
 }
 
 #close-navbar {
