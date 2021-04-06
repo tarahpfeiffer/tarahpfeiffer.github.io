@@ -1,0 +1,224 @@
+body  {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: #dcdce2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 250px;
+}
+
+.content-img {
+    margin: .0 auto;
+    display: block;
+}
+
+
+/* HEADER */
+
+.header {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .95;
+}
+
+.logo {
+    margin: 1em;
+    letter-spacing: 1px;
+    font-family: "Kiwi Maru", sans-serif;
+}
+
+.hamburger-icon {
+    height: 2em;
+    width: 2em;
+    margin: 1em .75em 0;
+}
+
+.line {
+    height: .2em;
+    width: 100%;
+    background-color: whitesmoke;
+    margin: .2em 0;
+    border-radius: 15px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: none;
+    visibility: none;
+    background-color: rgb(6, 80, 80);
+    height: 100%;
+    width: 70vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: .999;
+}
+
+.navbar-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0;
+}
+
+.navbar-li {
+    width: 100%;
+    border-bottom: 1px solid;
+    padding: 2em;
+}
+
+.navbar-link {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1em 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar-li, .navbar-link {
+    font-weight: bold;
+}
+
+.close-navbar {
+    font-size: 1.5rem;
+    border: 1px solid;
+    border-radius: 15px;
+    width: fit-content;
+    padding: .5em 1em;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+.footer,
+.header {
+    background-color: rgb(18, 53, 53);
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.icon {
+    height: 25px;
+    transition: transform .5s;
+}
+
+.icon:hover,
+.icon:focus {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.footer-text {
+    color: whitesmoke;
+    margin: 1em auto;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* HERO */
+
+.hero {
+    background-image: url(./images/portrait2.png);
+    background-color: slategrey;
+    background-blend-mode:multiply;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title,
+.hero-subtitle {
+    color: whitesmoke;
+    font-family: "Kiwi Maru", serif;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: .5em;
+    margin: 0;
+}
+
+.decoration {
+    height: 1em;
+    width: 100%;
+    background-color: seagreen;
+    margin: 0;
+}
+
+/* MAIN CONTENT */
+.content {
+    margin: 0;
+}
+
+.card {
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgb(18, 53, 53);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.5em;
+}
+
+.content-title {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.content-body {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+/* BUTTONS */
+
+.cta {
+    display: inline-block;
+    background-color:rgb(13, 90, 90);
+    color: whitesmoke;
+    padding: .5em 1em;
+    margin-top: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, .2);
+    border: 1px solid;
+}

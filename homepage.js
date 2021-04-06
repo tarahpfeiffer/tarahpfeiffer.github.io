@@ -1,14 +1,14 @@
 const openNavbar = document.getElementById("open-navbar");
 const closeNavbar = document.getElementById("close-navbar");
 
-const nav = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
 
 openNavbar.addEventListener("click", function() {
-    nav.style.visibility="unset";
-    openNavbar.style.visibility="hidden";
+    navbar.style.display = "block";
+    navbar.style.visibility = "unset";
 })
 
 closeNavbar.addEventListener("click", function() {
-    nav.style.visibility="hidden";
-    openNavbar.style.visibility="unset";
+    navbar.style.display = "none";
+    navbar.style.visibility = "none";
 })
