@@ -306,24 +306,29 @@ img {
     .wrapper {
         width: 60%;
     }
-    
+    .card {
+        align-items: center;
+    }
 
 }
 
 @media (min-width: 800px) {
+    .hero {
+        height: 87vh;
+    }
+    .hero-title {
+        font-size: 4em;
+        margin-top: 0;
+    }
+    .hero-subtitle {
+        font-size: 2em;
+    }
     .content-img {
-        width: 45%;
+        width: 20%;
+        margin: 0;
     }
     .wrapper {
-        width: 40%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .content-img {
-        width: 30%;
-    }
-    .wrapper {
-        width: 45%;
+        width: 50%;
+        margin: 2em 5em;
     }
 }
