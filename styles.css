@@ -68,13 +68,14 @@ img {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .navbar-li {
-    width: 100%;
     border-bottom: 1px solid;
     padding: 2em;
 }
@@ -101,7 +102,9 @@ img {
     margin: 0;
 }
 
-
+.active {
+    background-color: seagreen;
+}
 
 /* FOOTER */
 
@@ -124,7 +127,7 @@ img {
 
 .social-icons {
     width: 100%;
-    margin: 0 auto;
+    margin: .5em auto;
     padding: 1em;
     display: flex;
     flex-direction: row;
@@ -148,6 +151,7 @@ img {
     margin: 1em auto;
     letter-spacing: 1px;
     text-align: center;
+    line-height: 1.8;
 }
 
 /* HERO */
@@ -269,19 +273,20 @@ img {
         font-weight: 400;
         margin: 0;
         padding: 0;
+        padding: 1em 1.2em;
+        transition: background-color .5s ease-in-out;
     }
     .navbar-link {
         font-size: .8rem;
-        padding: 1em 1.2em;
-        transition: background-color .5s ease-in-out;
     }
     .cta {
         transition: background-color .5s ease-in-out;
     }
-    .navbar-link:hover,
+    .navbar-li:hover,
     .cta:hover {
-        background-color: seagreen;
+        background-color: teal;
     }
+
     .content {
         width: 90%;
         margin: 1em auto;
