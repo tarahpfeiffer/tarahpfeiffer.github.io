@@ -103,7 +103,7 @@ img {
 }
 
 .active {
-    background-color: seagreen;
+    text-decoration: underline;
 }
 
 /* FOOTER */
