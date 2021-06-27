@@ -214,6 +214,10 @@ img {
     line-height: 1.5;
 }
 
+.capitalized {
+    text-transform: uppercase;
+}
+
 
 /* BUTTONS */
 
