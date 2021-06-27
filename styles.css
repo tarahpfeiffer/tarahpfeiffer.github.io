@@ -193,7 +193,9 @@ img {
 
 .card {
     padding-bottom: 2em;
-    border-bottom: 1px solid rgb(18, 53, 53);
+    background: #f1f1f1;
+    max-width: ;
+    box-shadow: 3px 5px 20px rgba(18, 53, 53, .5);
 }
 
 .wrapper {
