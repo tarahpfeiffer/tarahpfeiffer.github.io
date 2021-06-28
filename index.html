@@ -17,36 +17,39 @@
 
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <p class="logo">TarahPfeiffer</p>
-    <!-- Hamburger icon -->
-    <div class="hamburger-icon" id="open-navbar">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
+  <div class="background-image"></div>
+    <!-- Header -->
+    <header class="header">
+      <p class="logo"><a href="index.html">TarahPfeiffer</a></p>
+      <!-- Hamburger icon -->
+        <div class="hamburger-icon" id="open-navbar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>    
 
-    <!-- Navigation -->   
-    <nav class="navbar" id="navbar">
-      <ul class="navbar-ul">
-        <!-- Exit Button -->
-        <li class="navbar-li close-navbar" id="close-navbar">x</li>
-        <li class="navbar-li active">
-          <a href="#" class="navbar-link">Home</a>
-        </li>
-        <li class="navbar-li">
-          <a href="#about-me" class="navbar-link">About</a>
-        </li>
-        <li class="navbar-li">
-          <a href="#biography" class="navbar-link">Biography</a>
-        </li>
-        <li class="navbar-li">
-          <a href="#portfolio" class="navbar-link">Portfolio</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <!-- Navigation -->   
+      <nav class="navbar" id="navbar">
+        <ul class="navbar-ul">
+          <!-- Exit Button -->
+          <li class="navbar-li close-navbar" id="close-navbar">x</li>
+          <li class="navbar-li active">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-li">
+            <a href="about.html" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-li">
+            <a href="biography.html" class="navbar-link">Biography</a>
+          </li>
+          <li class="navbar-li">
+            <a href="portfolio.html" class="navbar-link">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
 
 
 
@@ -54,78 +57,15 @@
   <main>
     <!-- Hero section -->
     <div class="hero">
-        <h1 class="hero-title">
-          Tarah Pfeiffer
-        </h1>
-        <h3 class="hero-subtitle">
-          UI Design
-        </h3>
-        <a href="mailto:pfeiffer.tarah@gmail.com" class="cta hero-cta">Email Me</a>
+      <div class="hero-navigation">
+        <h3 class="hero-nav"><a href="about.html">about</a></h3>
+        <h3 class="hero-nav"><a href="biography.html">biography</a></h3>
+        <h3 class="hero-nav"><a href="portfolio.html">portfolio</a></h3>
+      </div>
+      <h1 class="hero-title">Tarah Malaika Pfeiffer</h1>
+      <h3 class="hero-subtitle">UI Designer</h3>
+      <a href="mailto:pfeiffer.tarah@gmail.com" class="cta hero-cta">Email Me</a>
     </div>
-
-    <div class="decoration"></div>
-
-    <!-- Content section -->
-    <div class="content">
-      <div class="card">
-        <div class="wrapper" id="about-me">
-          <h3 class="content-title">About Me</h3>
-          <p class="content-body">My name is Tarah, I'm a professional dancer at TanzTheaterMünster and am currently enrolled in CareerFoundry's UI Design Program.
-            <br><br>
-            I'm excited to transition to a new career where I can be creative, flexible and work in a team with interesting people.
-            <br><br>
-            I am designing and creating this website from scratch to practice
-            my skills in HTML, CSS and JavaScript. 
-          </p>
-        </div>
-        <img class="content-img" src="images/portrait3.JPG" alt="portrait">
-      </div>
-
-      <div class="card">
-        <div class="wrapper" id="biography">
-          <h3 class="content-title">Biography</h3>
-          <p class="content-body">I was born 1991 in Linz, Austria to an Austrian father and a US-American mother. I grew up bilingual and am fluid in both English and German.
-            <br>I have spent most of my life in Germany, I completed high school in 2010 and then proceeded to study at the Palucca University of Dance in Dresden, completing my BA in Dance there in 2013.
-            <br>I have been working as a professional dancer ever since, from 2013 to 2017 at Ballet Chemnitz and since 2017 at TanzTheaterMünster. 
-            <br>Due to first the Covid Pandemic and then a shoulder injury in 2020, I had a lot of time off to think about transitioning to a new career after dance. 
-            <br>I began by learning the basics of computer science from Harvard's CS50x Introduction to Computer Science course. 
-            <br>I then discovered the Scrimba platform, where I completed several short courses on Python, CSS, HTML and JavaScript followed by their Front End Developer Career Path. 
-            <br>I realized that while I enjoy coding, I am always more interested in the design aspect of web development, so I decided that I'd like to learn more about User Interface Design. That's how I came across CareerFoundry and their UI Design Program, which I will completing part time alongside my job as a dancer.             
-          </p>
-        </div>
-        <img class="content-img left" src="images/portrait5.jpg" alt="portrait">
-      </div>
-
-      <div class="card">
-        <div class="wrapper" id="portfolio">
-          <h3 class="content-title">Curriculum Vitae</h3>
-          <p class="content-body">
-            <span class="capitalized">Professional Experience</span>
-            2017 – present:  professional dancer at TanzTheaterMünster
-            <br>2019 – present: Pilates trainer at KörperGeist Physiotherapie Münster
-            <br>2013 – 2017: professional dancer at Ballett Chemnitz
-            <hr>
-          </p>
-          <p class="content-body">
-            <span class="capitalized">Education</span>
-            CareerFoundry: UI Design Program (2021)
-            <br>Scrimba: The Frontend Developer Career Path (2021)
-            <br>Scrimba: The UI Design Bootcamp (2021)
-            <br>Scrimba: The Responsive Web Design Bootcamp (2021)
-            <br>Udemy: User Experience Design Essentials by Daniel Scott (2021)
-            <br>Harvard: CS50x Introduction to Computer Science (2020)
-            <hr>
-          </p>
-          <p class="content-body">
-            Bachelor of Arts in Dance at Palucca University of Dance Dresden (2013)
-            <br><br>
-            Abitur at Liebigschule Giessen (2010)
-          </p>
-        </div>
-      </div>
-
-    </div>
-
   </main>
   
   <!-- Footer -->

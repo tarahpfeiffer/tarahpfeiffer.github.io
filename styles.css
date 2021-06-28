@@ -219,17 +219,28 @@ img {
     box-shadow: 3px 5px 20px rgba(18, 53, 53, .5);
 }
 
+#cv {
+    margin-top: 2em;
+}
+
 .wrapper {
     margin: 0 auto;
     padding: 1.5em;
 }
 
-.content-title {
+.content-title,
+.content-subtitle {
     font-size: 1.7rem;
     margin: 0;
     font-family: "Kiwi Maru", serif;
     color: seagreen;
     text-align: left;
+}
+
+.content-subtitle {
+    font-size: 1.2rem;
+    color:rgb(8, 37, 37);
+    margin-top: .5em;
 }
 
 .content-body {
@@ -240,7 +251,6 @@ img {
 .capitalized {
     text-transform: uppercase;
 }
-
 
 /* BUTTONS */
 
