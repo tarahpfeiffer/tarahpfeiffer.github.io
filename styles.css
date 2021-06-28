@@ -2,6 +2,7 @@ body  {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     background: #dcdce2;
+    width: 100vw;
 }
 
 * {
@@ -9,12 +10,22 @@ body  {
 }
 
 img {
-    width: 90%;
+    max-width: 90%;
 }
 
 .content-img {
-    margin: .0 auto;
+    margin: 0 auto;
     display: block;
+}
+
+.portfolio-gallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio-img {
+    object-fit: contain;
 }
 
 
@@ -287,6 +298,11 @@ img {
     .close-navbar {
         display: none;
     }
+    .navbar {
+        display: unset;
+        border: none;
+        height: unset;
+    }
     .navbar-ul {
         flex-direction: row;
         margin: 0;
@@ -330,32 +346,43 @@ img {
         object-position: center;
         margin: 1em auto;
     }
-    .wrapper {
-        width: 60%;
-    }
+
     .card {
         align-items: center;
     }
-
 }
 
 @media (min-width: 800px) {
-    .hero {
-        height: 87vh;
-    }
-    .hero-title {
-        font-size: 4em;
-        margin-top: 0;
-    }
-    .hero-subtitle {
-        font-size: 2em;
-    }
-    .content-img {
-        width: 20%;
-        margin: 0;
-    }
     .wrapper {
-        width: 50%;
-        margin: 2em 5em;
+        width: 90%;
+        margin: 2em auto;
     }
+    .hero-title, 
+    .hero-subtitle, 
+    .hero-nav {
+        margin-left: 100px;
+    }
+    .hero-nav a,
+    .cta {
+        font-size: 1.5rem;
+        transition: color .5s ease-in-out;
+        transition: background-color .5s ease-in-out;
+    }
+    .hero-nav a:hover {
+        color: teal;
+    }
+    .portfolio-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .portfolio-img{
+        max-width: 35%;
+        height: 400px;
+        margin: 1em;
+        flex: 1;
+        object-fit: cover;
+        object-position: top;
+    }
+    
 }
