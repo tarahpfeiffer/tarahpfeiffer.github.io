@@ -209,7 +209,7 @@ img {
     margin-top: 0;
 }
 
-.hero-nav {
+.hero-navigation {
     margin-left: 30px;
 }
 
@@ -326,6 +326,9 @@ img {
     .cta:hover {
         background-color: teal;
     }
+    .hero-navigation {
+        margin-top: 15em;
+    }
 
     .content {
         width: 90%;
@@ -359,8 +362,11 @@ img {
     }
     .hero-title, 
     .hero-subtitle, 
-    .hero-nav {
+    .hero-navigation {
         margin-left: 100px;
+    }
+    .hero-navigation {
+        margin-top: 400px;
     }
     .hero-nav a,
     .cta {
