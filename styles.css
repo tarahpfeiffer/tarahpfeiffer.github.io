@@ -50,6 +50,7 @@ img {
     font-family: "Kiwi Maru", sans-serif;
     color: #1ce4b6;
     text-decoration: none;
+    margin-left: 30px;
 }
 
 .hamburger-icon {
@@ -252,7 +253,7 @@ img {
 }
 
 .content-body {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -329,7 +330,6 @@ img {
     .hero-navigation {
         margin-top: 15em;
     }
-
     .content {
         width: 90%;
         margin: 5em auto 2em;
@@ -342,40 +342,15 @@ img {
         align-items: center;
         margin: 2em auto;
     }
-
     .content-img {
         width: 50%;
         object-fit: cover;
         object-position: center;
         margin: 1em auto;
     }
-
     .card {
         align-items: center;
-    }
-}
-
-@media (min-width: 800px) {
-    .wrapper {
-        width: 90%;
-        margin: 2em auto;
-    }
-    .hero-title, 
-    .hero-subtitle, 
-    .hero-navigation {
-        margin-left: 100px;
-    }
-    .hero-navigation {
-        margin-top: 400px;
-    }
-    .hero-nav a,
-    .cta {
-        font-size: 1.5rem;
-        transition: color .5s ease-in-out;
-        transition: background-color .5s ease-in-out;
-    }
-    .hero-nav a:hover {
-        color: teal;
+        width: 100%;
     }
     .portfolio-gallery {
         flex-direction: row;
@@ -390,5 +365,34 @@ img {
         object-fit: cover;
         object-position: top;
     }
-    
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        width: 90%;
+        margin: 2em auto;
+    }
+    .hero-title, 
+    .hero-subtitle, 
+    .hero-navigation {
+        margin-left: 100px;
+    }
+    .logo {
+        margin-left: 65px;
+    }
+    .hero-nav a,
+    .cta {
+        font-size: 1.2rem;
+        transition: color .5s ease-in-out;
+        transition: background-color .5s ease-in-out;
+    }
+    .hero-nav a:hover {
+        color: teal;
+    }
+    .hero-navigation {
+        margin-top: 10em;
+    }
+    .cta {
+        margin-top: 0;
+    }
 }
