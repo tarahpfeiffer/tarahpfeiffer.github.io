@@ -120,9 +120,6 @@ img {
 
 .footer {
     background-color: #1c2830;
-    position: relative;
-    bottom: 0;
-    z-index: -100;
 }
 
 .footer-container {
@@ -172,8 +169,8 @@ img {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
     border: none;
 }
 
@@ -187,27 +184,27 @@ img {
 }
 
 .hero-title {
-    margin: 1.5em 0 0 1.5em;
+    font-size: 1.5rem;
+    max-width: 90%;
+    margin-left: 30px;
 }
 
 .hero-subtitle {
     color: #1ce4b6;
     margin-right: 6em;
-}
-
-.hero-navigation {
-    display: flex;
-    flex-direction: column;
-    margin-right: 8.5em;
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin-left: 30px;
+    margin-top: 0;
 }
 
 .hero-nav {
-    padding: .25em;
+    margin-left: 30px;
 }
 
 .hero-nav a {
     font-size: 1rem;
-    text-decoration: none;  
+    text-decoration: none; 
 }
 
 /* MAIN CONTENT */
@@ -260,14 +257,14 @@ img {
 
 .cta {
     display: inline-block;
-    background-color: #1c2830;
-    color: whitesmoke;
+    background-color: #1ce4b6;
+    color: #1c2830;
     padding: .5em 1em;
-    margin-top: 2em;
+    margin: 1em auto;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     box-shadow: 0px 1px 10px rgba(8, 37, 37, .5);
     border: none;
     border-radius: 2px;
@@ -276,19 +273,7 @@ img {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 500px) {
-    .hero {
-        background-position: unset;
-    }
-    .hero-title {
-        margin-top: 1.5em;
-    }
-}
-
 @media (min-width: 620px) {
-    .hero {
-        height: 60vh;
-    }
     .hero-title {
         font-size: 2.5rem;
     }
@@ -301,12 +286,6 @@ img {
     .hamburger-icon, 
     .close-navbar {
         display: none;
-    }
-    .navbar {
-        display: unset;
-        background: unset;
-        position: unset;
-        height: 100%;
     }
     .navbar-ul {
         flex-direction: row;
@@ -325,6 +304,7 @@ img {
     }
     .cta {
         transition: background-color .5s ease-in-out;
+        margin-bottom: 2em;
     }
     .navbar-li:hover,
     .cta:hover {
@@ -333,7 +313,7 @@ img {
 
     .content {
         width: 90%;
-        margin: 1em auto;
+        margin: 5em auto 2em;
     }
     .content-body {
         line-height: 1.6;
@@ -343,14 +323,12 @@ img {
         align-items: center;
         margin: 2em auto;
     }
-    .card-reversed {
-        flex-direction: row-reverse;
-    }
+
     .content-img {
-        width: 35%;
+        width: 50%;
         object-fit: cover;
         object-position: center;
-        margin: 1em;
+        margin: 1em auto;
     }
     .wrapper {
         width: 60%;
