@@ -261,6 +261,10 @@ img {
     text-transform: uppercase;
 }
 
+li {
+    margin-bottom: .5em;
+}
+
 .portfolio-img {
     margin: 1em auto;
 }
