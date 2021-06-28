@@ -21,30 +21,37 @@ img {
 /* HEADER */
 
 .header {
-    color: whitesmoke;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     opacity: .95;
+    background: #1c2830;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.logo {
+.logo a{
     margin: 1em;
     letter-spacing: 1px;
     font-family: "Kiwi Maru", sans-serif;
+    color: #1ce4b6;
+    text-decoration: none;
 }
 
 .hamburger-icon {
-    height: 2em;
-    width: 2em;
-    margin: 1em .75em 0;
+    height: 2.5em;
+    width: 2.5em;
+    padding: .25em;
+    margin-top: .5em;
 }
 
 .line {
     height: .2em;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #1ce4b6;
     margin: .2em 0;
     border-radius: 15px;
 }
@@ -54,13 +61,15 @@ img {
 .navbar {
     display: none;
     visibility: none;
-    background-color: rgb(6, 80, 80);
+    background-color: #1c2830;
     height: 100%;
     width: 70%;
     position: fixed;
     right: 0;
     top: 0;
-    opacity: .999;
+    opacity: .9999;
+    z-index: 100;
+    border-left: 2px solid #1ce4b6;
 }
 
 .navbar-ul {
@@ -76,7 +85,7 @@ img {
 }
 
 .navbar-li {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid whitesmoke;
     padding: 2em;
 }
 
@@ -100,6 +109,7 @@ img {
     width: fit-content;
     padding: .5em 1em;
     margin: 0;
+    color: whitesmoke;
 }
 
 .active {
@@ -108,14 +118,11 @@ img {
 
 /* FOOTER */
 
-.footer,
-.header {
-    background-color: rgb(18, 53, 53);
-}
-
 .footer {
+    background-color: #1c2830;
     position: relative;
     bottom: 0;
+    z-index: -100;
 }
 
 .footer-container {
@@ -158,55 +165,71 @@ img {
 
 .hero {
     background-image: url(./images/portrait6.jpg);
-    background-color: slategrey;
+    background-color: rgb(62, 71, 80);
     background-blend-mode:multiply;
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: none;
 }
 
-.hero-title,
-.hero-subtitle {
+.hero-title, 
+.hero-subtitle, 
+.hero-nav a{
     color: whitesmoke;
     font-family: "Kiwi Maru", serif;
     letter-spacing: 1px;
-    text-align: center;
-    padding: .5em;
-    margin: 0;
+    text-align: left;
 }
 
-.decoration {
-    height: 1em;
-    width: 100%;
-    background-color: seagreen;
-    margin: 0;
+.hero-title {
+    margin: 1.5em 0 0 1.5em;
+}
+
+.hero-subtitle {
+    color: #1ce4b6;
+    margin-right: 6em;
+}
+
+.hero-navigation {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8.5em;
+}
+
+.hero-nav {
+    padding: .25em;
+}
+
+.hero-nav a {
+    font-size: 1rem;
+    text-decoration: none;  
 }
 
 /* MAIN CONTENT */
-.content {
-    margin: 0;
-}
 
 .card {
-    padding-bottom: 2em;
-    background: #f1f1f1;
-    max-width: ;
+    margin: 5em auto 2em;
+    background: #e7e6e6;
+    max-width: 90%;
     box-shadow: 3px 5px 20px rgba(18, 53, 53, .5);
 }
 
 .wrapper {
     margin: 0 auto;
-    width: 90%;
     padding: 1.5em;
 }
 
 .content-title {
     font-size: 1.7rem;
     margin: 0;
+    font-family: "Kiwi Maru", serif;
+    color: seagreen;
+    text-align: left;
 }
 
 .content-body {
@@ -223,7 +246,7 @@ img {
 
 .cta {
     display: inline-block;
-    background-color:rgb(13, 90, 90);
+    background-color: #1c2830;
     color: whitesmoke;
     padding: .5em 1em;
     margin-top: 2em;
@@ -231,8 +254,9 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2rem;
-    box-shadow: 0px 1px 10px rgba(255, 255, 255, .2);
-    border: 1px solid;
+    box-shadow: 0px 1px 10px rgba(8, 37, 37, .5);
+    border: none;
+    border-radius: 2px;
 }
 
 
