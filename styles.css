@@ -269,6 +269,18 @@ li {
     margin: 1em auto;
 }
 
+.disclaimer {
+    height: 75vh;
+    background-color: seagreen;
+}
+
+.info {
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+
 /* BUTTONS */
 
 .cta {
