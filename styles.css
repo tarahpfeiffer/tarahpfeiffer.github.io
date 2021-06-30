@@ -281,6 +281,10 @@ li {
     color: whitesmoke;
 }
 
+.construction {
+    height: 40%;
+}
+
 /* BUTTONS */
 
 .cta {
