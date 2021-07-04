@@ -175,7 +175,7 @@ img {
 .hero {
     background-image: url(./images/portrait6.jpg);
     background-color: rgb(62, 71, 80);
-    background-blend-mode:multiply;
+    background-blend-mode: soft-light;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -196,7 +196,7 @@ img {
 }
 
 .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     max-width: 90%;
     margin-left: 30px;
 }
@@ -204,7 +204,7 @@ img {
 .hero-subtitle {
     color: #1ce4b6;
     margin-right: 6em;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     max-width: 90%;
     margin-left: 30px;
     margin-top: 0;
@@ -215,7 +215,7 @@ img {
 }
 
 .hero-nav a {
-    font-size: 1rem;
+    font-size: 1.125rem;
     text-decoration: none; 
 }
 
